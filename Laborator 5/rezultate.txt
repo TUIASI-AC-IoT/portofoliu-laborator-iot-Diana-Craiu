@@ -1,0 +1,19 @@
+I (3648) wifi:<ba-del>idx
+I (3648) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:6
+I (3658) wifi:mode : softAP (24:d7:eb:bb:94:a9)
+I (3668) wifi:Total power save buffer number: 16
+I (3668) wifi:Init max length of beacon: 752/752
+I (3668) wifi:Init max length of beacon: 752/752
+␛[0;32mI (3688) wifi station: retry to connect to the AP␛[0m
+␛[0;32mI (3688) wifi station: connect to the AP fail␛[0m
+␛[0;32mI (3688) wifi softAP: Event: SoftAP started␛[0m
+I (3698) wifi:Total power save buffer number: 16
+␛[0;32mI (3708) wifi softAP: Event: SoftAP started␛[0m
+I (3708) wifi:Set ps type: 0
+
+␛[0;32mI (3708) wifi softAP: wifi_init_softap finished. SSID:ESP32-prov-craiu password:password channel:6␛[0m
+I (68678) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6
+I (68678) wifi:station: 2a:00:4b:76:45:35 join, AID=1, bgn, 20
+␛[0;32mI (68708) wifi softAP: station 2a:00:4b:76:45:35 join, AID=1␛[0m
+␛[0;32mI (68838) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2␛[0m
+I (69248) wifi:<ba-add>idx:2 (ifx:1, 2a:00:4b:76:45:35), tid:0, ssn:16, winSize:64
