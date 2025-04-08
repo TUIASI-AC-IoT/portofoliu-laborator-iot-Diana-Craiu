@@ -1,0 +1,32 @@
+LED= 0
+LED= 0
+LED= 1
+LED= 31
+LED= 0
+LED= 1
+LED= 0
+LED= 1
+LED= 0
+LED= 1
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+LED= 0
+LED= 1
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
+Notificare dezactivata pentru caracteristica BUTTON
+Notificare activata pentru caracteristica BUTTON
