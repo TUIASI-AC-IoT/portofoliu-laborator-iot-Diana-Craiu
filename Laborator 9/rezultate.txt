@@ -1,0 +1,10 @@
+
+Passkey: 123456
+Bonded!
+Not Bonded
+Passkey: 123456
+Bonded!
+Not Bonded
+Passkey: 123456
+Bonded!
+
