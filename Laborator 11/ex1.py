@@ -11,16 +11,39 @@ if not os.path.exists(director):
 
 @app.route("/")
 def hello():
-    fisiere = os.listdir(director)
-    return fisiere
+    return """
+    <h1>Bine ai venit!</h1>
+    <p>Foloseste rutele de mai jos pentru a accesa diferitele functionalitati:</p>
+    <ul>
+        <li><a href="/files">http://localhost:5000/files</a> - listarea continutului directorului</li>
+        <li>http://localhost:5000/files/&lt;nume&gt; - listarea continutului unui fisier (ex: /files/exemplu.txt)</li>
+        <li>http://localhost:5000/files/&lt;nume&gt; - PUT- crearea unui fisier specificat prin nume si continut (se foloseste de ex Postman/curl)</li>
+        <li>http://localhost:5000/files - POST- crearea unui fisier cu continut (numele este generat automat) (Postman/curl)</li>
+        <li>http://localhost:5000/files/&lt;nume&gt; - stergerea unui fisier (Postman/curl)</li>
+        <li>http://localhost:5000/files/&lt;nume&gt; - PUT- modificarea continutului unui fisier (Postman/curl)</li>
+    </ul>
+    """
 
 @app.route('/files', methods=['GET'])
 def afisare():
     fisiere = os.listdir(director)
-    return fisiere
+
+    if not fisiere:
+        return """
+        <h2>Fisiere disponibile:</h2>
+        <p>Momentan nu exista fisiere in director.</p>
+        <p>Poti crea un fisier folosind metoda <strong>PUT</strong>de ex in Postman/curl, la adresa:<br>
+        http://localhost:5000/files/&lt;nume&gt;</p>
+        """
+    
+    html = "<h2>Fisiere disponibile:</h2><ul>"
+    for fisier in fisiere:
+        html += f'<li><a href="/files/{fisier}">{fisier}</a></li>'
+    html += "</ul>"
+    return html
 
 @app.route('/files/<nume>', methods=['GET'])
-def citire_nume(nume):
+def citire_fisier(nume):
     cale = os.path.join(director, nume)
 
     if not os.path.isfile(cale):
