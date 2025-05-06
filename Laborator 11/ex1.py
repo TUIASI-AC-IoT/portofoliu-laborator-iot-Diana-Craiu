@@ -13,7 +13,7 @@ if not os.path.exists(director):
 def hello():
     return """
     <h1>Bine ai venit!</h1>
-    <p>Foloseste rutele de mai jos pentru a accesa diferitele functionalitati:</p>
+    <p>Foloseste rutele de mai jos pentru a accesa diferite functionalitati:</p>
     <ul>
         <li><a href="/files">http://localhost:5000/files</a> - listarea continutului directorului</li>
         <li>http://localhost:5000/files/&lt;nume&gt; - listarea continutului unui fisier (ex: /files/exemplu.txt)</li>
